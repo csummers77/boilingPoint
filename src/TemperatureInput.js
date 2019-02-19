@@ -11,7 +11,7 @@ class TemperatureInput extends Component{
     }
     handleChange(event){
         console.log(event.target.value);
-        if(event.target.match(/^\d*$/)){
+        if(event.target.value.match(/^\d*$/)){
             console.log("Only Numbers")
             this.setState({
                 temperature: event.target.value,
